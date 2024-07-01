@@ -6,7 +6,6 @@ import org.junit.jupiter.api.BeforeAll;
 public class TestBase {
     @BeforeAll
     static void setUpBefore() {
-      //  Configuration.baseUrl = "https://www.wildberries.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
     }
