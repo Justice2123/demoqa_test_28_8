@@ -15,7 +15,6 @@ public class ModalWindowWithSizesTest extends TestBase {
     })
     @ParameterizedTest(name = "После нажатия на кнопку 'В избраное' должно появится модальное окно с выбором размера")
     @Tag("WEB")
-
     void checkModalWindowWithSizesIfNoGoods(String articleNumber) {
         open("https://www.wildberries.ru/");
         $("#searchInput").click();

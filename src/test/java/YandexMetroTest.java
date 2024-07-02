@@ -14,7 +14,7 @@ public class YandexMetroTest extends TestBase {
     @DisplayName("Проверка смены языка заголовка")
     void displayCorrectText(Language chooseLanguage) {
         open("https://yandex.com/support2/metro/en/");
-        $(".g-popover__handler button",1).click();
+        $(".g-popover__handler button", 1).click();
         $$(".g-popup_open button").find(text(chooseLanguage.name())).click();
         $(".dc-doc-page__content h1").shouldHave(text(chooseLanguage.headerText));
     }
